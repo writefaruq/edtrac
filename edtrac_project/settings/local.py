@@ -43,3 +43,7 @@ LOGGING['loggers']['django.request'] = {
             }
 
 SPREADSHEETS_PATH = filedir
+
+TEMPLATE_DIRS = { '/home/fsarker/projects/rapidsms-sandbox/edtrac/edtrac-env/django/contrib/admin/templates/' }
+
+STATICFILES_DIR  = { '/home/fsarker/projects/rapidsms-sandbox/edtrac/edtrac-env/django/contrib/admin/static/admin/' }
