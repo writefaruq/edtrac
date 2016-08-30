@@ -2,7 +2,7 @@ import datetime
 
 from .base import *
 
-SITE_ID = 5
+SITE_ID = 1
 DEBUG = True
 TEMPLATE_DEBUG = True
 
@@ -10,7 +10,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'edtrac',
-        'USER': 'postgres',
+        'USER': 'mtrack',
+        'PASSWORD': 'mtrack',
         'HOST': 'localhost',
     }
 }
@@ -18,12 +19,12 @@ DATABASES = {
 INSTALLED_APPS += (
    # 'django_extensions',
    'django.contrib.staticfiles',
-   'debug_toolbar',
+   #'debug_toolbar',
 )
 
-MIDDLEWARE_CLASSES += (
-   'debug_toolbar.middleware.DebugToolbarMiddleware',
-)
+#MIDDLEWARE_CLASSES += (
+#   'debug_toolbar.middleware.DebugToolbarMiddleware',
+#)
 
 INTERNAL_IPS += ('127.0.0.1', '::1')
 DEBUG_TOOLBAR_CONFIG = {
